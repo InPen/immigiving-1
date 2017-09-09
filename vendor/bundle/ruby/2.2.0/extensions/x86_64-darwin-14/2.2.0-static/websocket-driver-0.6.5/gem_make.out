@@ -1,0 +1,12 @@
+/Users/kent.tam/.rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20170909-55416-1c48u0s.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 websocket_mask.bundle ./.gem.20170909-55416-avjsy7
