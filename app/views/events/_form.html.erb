@@ -12,8 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :event_name %>
+    <%= form.label :title %>
+    <%= form.text_field :name, id: :event_title %>
+  </div>
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date, id: :event_date %>
+  </div>
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :name, id: :event_location %>
+  </div>
+  <div class="field">
+    <%= form.label :number_of_volunteers %>
+    <%= form.text_field :number %>
   </div>
 
   <div class="field">
@@ -21,10 +33,7 @@
     <%= form.text_field :description, id: :event_description %>
   </div>
 
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.datetime_select :date, id: :event_date %>
-  </div>
+
 
   <div class="actions">
     <%= form.submit %>
