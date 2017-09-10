@@ -7,7 +7,7 @@
     <div class="list-group-item list-group-item-action flex-column align-items-start">
       <div class="d-flex w-100 justify-content-between">
         <h5 class="mb-1"><%= link_to event.name, event %></h5>
-        <small><%= event.date.strftime("%m/%d/%Y at %I:%M%p") %></small>
+        <small><%= event_date(event) %></small>
       </div>
       <p><%= event.description %></p>
     </div>
